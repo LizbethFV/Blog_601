@@ -9,7 +9,7 @@ Blog = Dash(__name__, use_pages=True, external_stylesheets=[
     dbc.icons.BOOTSTRAP,
     '/assets/custom.css'
 ])
-
+server = Blog.server
 Colores_blog = {
     'sidebar_bg': '#860E38',
     'text_light': '#fcfcfc',
