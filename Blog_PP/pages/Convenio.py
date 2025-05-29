@@ -443,7 +443,7 @@ html.Div([
                    className="animate-on-scroll",
                    style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'center', 'margin': '0 auto'}),
 html.Iframe(
-    srcDoc=open(html_file_path, 'r', encoding='utf-8').read(),,
+    srcDoc=open(html_file_path, 'r', encoding='utf-8').read(),
     width='80%',
     height='600px',
     style={'border': '1px solid #ccc', 'margin': '0 auto', 'display': 'block','margin-bottom': '50px'}
