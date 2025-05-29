@@ -5,12 +5,9 @@ import plotly.graph_objs as go
 import plotly.express as px
 from dash import html, register_page
 from datetime import time
-import os
 # Registra la página con un nombre y ruta personalizada
-dash.register_page(__name__, path="/convenios", name="Convenios")
+dash.register_page(__name__, path="/convenios", name="3.Convenio")
 
-current_directory = os.path.dirname(os.path.abspath(__file__))
-html_file_path = os.path.join(current_directory, 'CECATI_URC_Mapa.html')
 df_CECATI_13N = pd.read_csv('https://raw.githubusercontent.com/LizbethFV/Bases_de_Datos_P.P_601/refs/heads/main/CECATI%20-%20CECATI%2013%20numeralia.csv')
 df_CECATI_13H = pd.read_csv('https://raw.githubusercontent.com/LizbethFV/Bases_de_Datos_P.P_601/refs/heads/main/CECATI%20-%20CECATI_13_Hor.csv')
 df_CECATI_13I = pd.read_csv('https://raw.githubusercontent.com/LizbethFV/Bases_de_Datos_P.P_601/refs/heads/main/CECATI%20-%20CECATI_13_Instalaciones.csv')
@@ -395,6 +392,18 @@ tabla_hn.update_layout(
 )
 #---------------------------------------------------------------------------------------------------------
 layout = html.Div([
+    html.Div([
+        html.P('Elaborado por:',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '0px'}),
+        html.P('Lizbeth Fernandez Viñas',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '0px'}),
+        html.P('Isis Minerva Osorio Cano',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '0px'}),
+        html.P('Rocio Olvera Guzmán',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '10px'}),
+        html.P('Publicado el 29 de mayo de 2025',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','margin-bottom': '20px','font-weight': 'bold'}),
+    ]),
 
     html.H1("Hacia la optimización de espacios educativos: una propuesta de colaboración entre la UNRC y el CECATI", 
             className="animate-on-scroll",
@@ -425,12 +434,11 @@ html.Div([
     html.H4("Ubicación y distribución de las unidades académicas en la CDMX",
             className="animate-on-scroll",
             style={'font-family': 'Verdana', 'font-size': '18px','font-weight': 'bold', 'text-align': 'center', 'margin-top': '40px'}),
-    html.P("Como primer paso en este proyecto, realizamos un mapeo de las unidades académicas de la Universidad Rosario Castellanos (UNRC) y de los Centros de Capacitación para el Trabajo Industrial (CECATI), con el objetivo de visualizar su distribución geográfica en la Ciudad de México.",
-           className="animate-on-scroll",
-           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'center', 'margin': '0 auto'}),
+            html.P("Como primer paso en este proyecto, realizamos un mapeo de las unidades académicas de la Universidad Rosario Castellanos (UNRC) y de los Centros de Capacitación para el Trabajo Industrial (CECATI), con el objetivo de visualizar su distribución geográfica en la Ciudad de México.",
+                   className="animate-on-scroll",
+                   style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'center', 'margin': '0 auto'}),
     html.Iframe(
-        # ¡USA LA RUTA ABSOLUTA AQUÍ!
-        srcDoc=open(html_file_path, 'r', encoding='utf-8').read(),
+        srcDoc=open('CECATI_URC_Mapa.html', 'r', encoding='utf-8').read(),
         width='80%',
         height='600px',
         style={'border': '1px solid #ccc', 'margin': '0 auto', 'display': 'block','margin-bottom': '50px'}
@@ -589,4 +597,5 @@ html.Div([
 
 ], style={'text-align': 'center','margin-bottom': '50px'}),
      
+
     ])
