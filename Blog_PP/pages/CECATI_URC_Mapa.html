@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_96cc3412369e7a82f1f8a19588d5d052 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_96cc3412369e7a82f1f8a19588d5d052" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_96cc3412369e7a82f1f8a19588d5d052 = L.map(
+                "map_96cc3412369e7a82f1f8a19588d5d052",
+                {
+                    center: [19.48999019, -99.17582092],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9d98b0912432cfc1005267e26f6f4ba8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9d98b0912432cfc1005267e26f6f4ba8.addTo(map_96cc3412369e7a82f1f8a19588d5d052);
+        
+    
+            var feature_group_2fb4970bdd8290e6c3bef646ef5bab6a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_3d15c0df4d98e2c2e154d46b5ec7c606 = L.marker(
+                [19.48999019, -99.17582092],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_39dad1bb647ce7801b49f67d6c6ef855 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa6d36931a31163598fc05c9a060f621 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a43aa1b9b7381f17f50036cab8d9952 = $(`<div id="html_6a43aa1b9b7381f17f50036cab8d9952" style="width: 100.0%; height: 100.0%;">CECATI 1</div>`)[0];
+                popup_aa6d36931a31163598fc05c9a060f621.setContent(html_6a43aa1b9b7381f17f50036cab8d9952);
+            
+        
+
+        marker_3d15c0df4d98e2c2e154d46b5ec7c606.bindPopup(popup_aa6d36931a31163598fc05c9a060f621)
+        ;
+
+        
+    
+    
+                marker_3d15c0df4d98e2c2e154d46b5ec7c606.setIcon(icon_39dad1bb647ce7801b49f67d6c6ef855);
+            
+    
+            var marker_675729fa981689bb93f97e9dac3f5a87 = L.marker(
+                [19.33511809, -99.20176136],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_80c853c5eb5c78a5569780f3030f730a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb2536c452e0878bc93eca99b725a3d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d0d3a3c119e0faddf199f9a8dc4bfc2 = $(`<div id="html_2d0d3a3c119e0faddf199f9a8dc4bfc2" style="width: 100.0%; height: 100.0%;">CECATI 2</div>`)[0];
+                popup_eb2536c452e0878bc93eca99b725a3d6.setContent(html_2d0d3a3c119e0faddf199f9a8dc4bfc2);
+            
+        
+
+        marker_675729fa981689bb93f97e9dac3f5a87.bindPopup(popup_eb2536c452e0878bc93eca99b725a3d6)
+        ;
+
+        
+    
+    
+                marker_675729fa981689bb93f97e9dac3f5a87.setIcon(icon_80c853c5eb5c78a5569780f3030f730a);
+            
+    
+            var marker_5410737d87fdb73302d9b11df59c5f4e = L.marker(
+                [19.42265194, -99.11750373],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_359d0cd81b2f6843dcdb6bac665f1e6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57358b1bd7055ab9d282223f54ae7574 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bac78003e18cff20a4cbdacf4f77de4 = $(`<div id="html_2bac78003e18cff20a4cbdacf4f77de4" style="width: 100.0%; height: 100.0%;">CECATI 3</div>`)[0];
+                popup_57358b1bd7055ab9d282223f54ae7574.setContent(html_2bac78003e18cff20a4cbdacf4f77de4);
+            
+        
+
+        marker_5410737d87fdb73302d9b11df59c5f4e.bindPopup(popup_57358b1bd7055ab9d282223f54ae7574)
+        ;
+
+        
+    
+    
+                marker_5410737d87fdb73302d9b11df59c5f4e.setIcon(icon_359d0cd81b2f6843dcdb6bac665f1e6e);
+            
+    
+            var marker_d99671c132a48d24b98b930495627c72 = L.marker(
+                [19.44501251, -99.21551868],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_d881762d3e55ef341cea60886afe3421 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6a7e1039ecce6cc54c649900f1db0c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6633f0fabe52846a759debc39667dcbb = $(`<div id="html_6633f0fabe52846a759debc39667dcbb" style="width: 100.0%; height: 100.0%;">CECATI 4</div>`)[0];
+                popup_c6a7e1039ecce6cc54c649900f1db0c8.setContent(html_6633f0fabe52846a759debc39667dcbb);
+            
+        
+
+        marker_d99671c132a48d24b98b930495627c72.bindPopup(popup_c6a7e1039ecce6cc54c649900f1db0c8)
+        ;
+
+        
+    
+    
+                marker_d99671c132a48d24b98b930495627c72.setIcon(icon_d881762d3e55ef341cea60886afe3421);
+            
+    
+            var marker_5a02f1702f4301fa7c3c91a7bc60d6bf = L.marker(
+                [19.48940863, -99.17577146],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_356f5914c428bab5bbb8e87b39121caa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98862774b8f2dd616fdee2df22eface4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_425c0606b0c4097c1b10452a5b44534c = $(`<div id="html_425c0606b0c4097c1b10452a5b44534c" style="width: 100.0%; height: 100.0%;">CECATI 11</div>`)[0];
+                popup_98862774b8f2dd616fdee2df22eface4.setContent(html_425c0606b0c4097c1b10452a5b44534c);
+            
+        
+
+        marker_5a02f1702f4301fa7c3c91a7bc60d6bf.bindPopup(popup_98862774b8f2dd616fdee2df22eface4)
+        ;
+
+        
+    
+    
+                marker_5a02f1702f4301fa7c3c91a7bc60d6bf.setIcon(icon_356f5914c428bab5bbb8e87b39121caa);
+            
+    
+            var marker_387c0ed7172878191a8d546b60b1e798 = L.marker(
+                [19.48559787, -99.10258079],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_f8cb1413a4d0af3f695c9dbb3a9b7dd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f6e3b90d1118a3ffb4f1cb7d8c2a1fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d072b7a5928a93b0f1115eb0e5635b0f = $(`<div id="html_d072b7a5928a93b0f1115eb0e5635b0f" style="width: 100.0%; height: 100.0%;">CECATI 12</div>`)[0];
+                popup_6f6e3b90d1118a3ffb4f1cb7d8c2a1fa.setContent(html_d072b7a5928a93b0f1115eb0e5635b0f);
+            
+        
+
+        marker_387c0ed7172878191a8d546b60b1e798.bindPopup(popup_6f6e3b90d1118a3ffb4f1cb7d8c2a1fa)
+        ;
+
+        
+    
+    
+                marker_387c0ed7172878191a8d546b60b1e798.setIcon(icon_f8cb1413a4d0af3f695c9dbb3a9b7dd6);
+            
+    
+            var marker_db5610ecaf1106d7e39863d41a60ff95 = L.marker(
+                [19.32942382, -99.14183766],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_5e1956f3f657bde9c6987f26be16b6e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23e0d15f92ac2e2408d8e7eb04e7ad3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fb665d732d3e8394f27aad5e38e7bcc = $(`<div id="html_5fb665d732d3e8394f27aad5e38e7bcc" style="width: 100.0%; height: 100.0%;">CECATI 13</div>`)[0];
+                popup_23e0d15f92ac2e2408d8e7eb04e7ad3d.setContent(html_5fb665d732d3e8394f27aad5e38e7bcc);
+            
+        
+
+        marker_db5610ecaf1106d7e39863d41a60ff95.bindPopup(popup_23e0d15f92ac2e2408d8e7eb04e7ad3d)
+        ;
+
+        
+    
+    
+                marker_db5610ecaf1106d7e39863d41a60ff95.setIcon(icon_5e1956f3f657bde9c6987f26be16b6e0);
+            
+    
+            var marker_0ca179751efbcd34ca1e1146e0b465a9 = L.marker(
+                [19.39492542, -99.09614697],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_34ad8af76c2b42c46da8a3bc5031c3fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b391becf60eb0bb9bd46d1fcf66d818d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82c5c8ef396e5d76e35cddddcb464812 = $(`<div id="html_82c5c8ef396e5d76e35cddddcb464812" style="width: 100.0%; height: 100.0%;">CECATI 14</div>`)[0];
+                popup_b391becf60eb0bb9bd46d1fcf66d818d.setContent(html_82c5c8ef396e5d76e35cddddcb464812);
+            
+        
+
+        marker_0ca179751efbcd34ca1e1146e0b465a9.bindPopup(popup_b391becf60eb0bb9bd46d1fcf66d818d)
+        ;
+
+        
+    
+    
+                marker_0ca179751efbcd34ca1e1146e0b465a9.setIcon(icon_34ad8af76c2b42c46da8a3bc5031c3fc);
+            
+    
+            var marker_b99d818da5433e6c915b251146a02f77 = L.marker(
+                [19.41754555, -99.17490486],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_b88c10a3b5408e549ea6c06fa77e6a9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9993ec747582300fda8627f84c29d7c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca7371f22e8f5a9477eb34570aa7d1d1 = $(`<div id="html_ca7371f22e8f5a9477eb34570aa7d1d1" style="width: 100.0%; height: 100.0%;">CECATI 25</div>`)[0];
+                popup_9993ec747582300fda8627f84c29d7c0.setContent(html_ca7371f22e8f5a9477eb34570aa7d1d1);
+            
+        
+
+        marker_b99d818da5433e6c915b251146a02f77.bindPopup(popup_9993ec747582300fda8627f84c29d7c0)
+        ;
+
+        
+    
+    
+                marker_b99d818da5433e6c915b251146a02f77.setIcon(icon_b88c10a3b5408e549ea6c06fa77e6a9a);
+            
+    
+            var marker_c01cd6fd8439c8198e5fb88855ee2362 = L.marker(
+                [19.45642587, -99.1402224],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_8c9a3d643478b1a73429b61d891a432d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0731759d1972f94f15b5fca0931ab6a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0cf6643eb9eed2106dc303b227cd3088 = $(`<div id="html_0cf6643eb9eed2106dc303b227cd3088" style="width: 100.0%; height: 100.0%;">CECATI 58</div>`)[0];
+                popup_0731759d1972f94f15b5fca0931ab6a0.setContent(html_0cf6643eb9eed2106dc303b227cd3088);
+            
+        
+
+        marker_c01cd6fd8439c8198e5fb88855ee2362.bindPopup(popup_0731759d1972f94f15b5fca0931ab6a0)
+        ;
+
+        
+    
+    
+                marker_c01cd6fd8439c8198e5fb88855ee2362.setIcon(icon_8c9a3d643478b1a73429b61d891a432d);
+            
+    
+            var marker_2125a74139584b52783d9b7ad5000072 = L.marker(
+                [19.37208187, -99.17447073],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_077b675152353d134811518793cc91df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60b075fdff2cd5eb71650ec76fbce816 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e752e2e26bcf24fcce5a1336d060086d = $(`<div id="html_e752e2e26bcf24fcce5a1336d060086d" style="width: 100.0%; height: 100.0%;">CECATI 66</div>`)[0];
+                popup_60b075fdff2cd5eb71650ec76fbce816.setContent(html_e752e2e26bcf24fcce5a1336d060086d);
+            
+        
+
+        marker_2125a74139584b52783d9b7ad5000072.bindPopup(popup_60b075fdff2cd5eb71650ec76fbce816)
+        ;
+
+        
+    
+    
+                marker_2125a74139584b52783d9b7ad5000072.setIcon(icon_077b675152353d134811518793cc91df);
+            
+    
+            var marker_6a544dc4748bec59fa29891f2d0ebedb = L.marker(
+                [19.38229471, -99.09735263],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_f769b67c9d87ee49ba865a320706c861 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4328956f27e0605618af01cb1ec62a03 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36775678aaba7995575828dc5e88d63f = $(`<div id="html_36775678aaba7995575828dc5e88d63f" style="width: 100.0%; height: 100.0%;">CECATI 73</div>`)[0];
+                popup_4328956f27e0605618af01cb1ec62a03.setContent(html_36775678aaba7995575828dc5e88d63f);
+            
+        
+
+        marker_6a544dc4748bec59fa29891f2d0ebedb.bindPopup(popup_4328956f27e0605618af01cb1ec62a03)
+        ;
+
+        
+    
+    
+                marker_6a544dc4748bec59fa29891f2d0ebedb.setIcon(icon_f769b67c9d87ee49ba865a320706c861);
+            
+    
+            var marker_79297fd3a2ca372b90669e92838f9366 = L.marker(
+                [19.48251223, -99.11842778],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_5735af784a3c40d37b18fab8b411bcd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df9a87249e673aa7e43a4e967a9b8085 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6826d02efd94d690d70a680f24273c98 = $(`<div id="html_6826d02efd94d690d70a680f24273c98" style="width: 100.0%; height: 100.0%;">CECATI 74</div>`)[0];
+                popup_df9a87249e673aa7e43a4e967a9b8085.setContent(html_6826d02efd94d690d70a680f24273c98);
+            
+        
+
+        marker_79297fd3a2ca372b90669e92838f9366.bindPopup(popup_df9a87249e673aa7e43a4e967a9b8085)
+        ;
+
+        
+    
+    
+                marker_79297fd3a2ca372b90669e92838f9366.setIcon(icon_5735af784a3c40d37b18fab8b411bcd8);
+            
+    
+            var marker_c6f5cc4032bef442c71644ff670ad8f9 = L.marker(
+                [19.49734016, -99.12308766],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_285692407b78e61c2996d2e8c51a289a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2e11912f0356f734b5d984608eb3ae3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b968fc982111f20f3b0252a60c3cfeb0 = $(`<div id="html_b968fc982111f20f3b0252a60c3cfeb0" style="width: 100.0%; height: 100.0%;">CECATI 75</div>`)[0];
+                popup_a2e11912f0356f734b5d984608eb3ae3.setContent(html_b968fc982111f20f3b0252a60c3cfeb0);
+            
+        
+
+        marker_c6f5cc4032bef442c71644ff670ad8f9.bindPopup(popup_a2e11912f0356f734b5d984608eb3ae3)
+        ;
+
+        
+    
+    
+                marker_c6f5cc4032bef442c71644ff670ad8f9.setIcon(icon_285692407b78e61c2996d2e8c51a289a);
+            
+    
+            var marker_1923dd98c57e7158bb61274fa41dab35 = L.marker(
+                [19.29285291, -99.18297335],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_d00e84a5cdd47413a785c8d0941b0525 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_621dd9f7fc19914ac35bfee8beb8448c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35b365f4e129257ac0d9a99f76164516 = $(`<div id="html_35b365f4e129257ac0d9a99f76164516" style="width: 100.0%; height: 100.0%;">CECATI 99</div>`)[0];
+                popup_621dd9f7fc19914ac35bfee8beb8448c.setContent(html_35b365f4e129257ac0d9a99f76164516);
+            
+        
+
+        marker_1923dd98c57e7158bb61274fa41dab35.bindPopup(popup_621dd9f7fc19914ac35bfee8beb8448c)
+        ;
+
+        
+    
+    
+                marker_1923dd98c57e7158bb61274fa41dab35.setIcon(icon_d00e84a5cdd47413a785c8d0941b0525);
+            
+    
+            var marker_ff9043302aa6069a356d40174aa2e18f = L.marker(
+                [19.48857229, -99.1759586],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_889c1618c984a0f627b0a18d265f47e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63cb726e86472e4be8b442f5884210eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c496bad115751ff180f607a22632579 = $(`<div id="html_7c496bad115751ff180f607a22632579" style="width: 100.0%; height: 100.0%;">CECATI 108</div>`)[0];
+                popup_63cb726e86472e4be8b442f5884210eb.setContent(html_7c496bad115751ff180f607a22632579);
+            
+        
+
+        marker_ff9043302aa6069a356d40174aa2e18f.bindPopup(popup_63cb726e86472e4be8b442f5884210eb)
+        ;
+
+        
+    
+    
+                marker_ff9043302aa6069a356d40174aa2e18f.setIcon(icon_889c1618c984a0f627b0a18d265f47e4);
+            
+    
+            var marker_0c164a87a543e9e91a3bdfaf64ac3bee = L.marker(
+                [19.29787462, -99.1632141],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_feeda941ba310258863247dd0f94f69d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4c6b34375f3a219981b15e2cdfed995 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e2d3a6e4890a6f1f3e4890d1d0b90b4 = $(`<div id="html_6e2d3a6e4890a6f1f3e4890d1d0b90b4" style="width: 100.0%; height: 100.0%;">CECATI 127</div>`)[0];
+                popup_a4c6b34375f3a219981b15e2cdfed995.setContent(html_6e2d3a6e4890a6f1f3e4890d1d0b90b4);
+            
+        
+
+        marker_0c164a87a543e9e91a3bdfaf64ac3bee.bindPopup(popup_a4c6b34375f3a219981b15e2cdfed995)
+        ;
+
+        
+    
+    
+                marker_0c164a87a543e9e91a3bdfaf64ac3bee.setIcon(icon_feeda941ba310258863247dd0f94f69d);
+            
+    
+            var marker_ec2bb5b5e8087428f19259f940daece5 = L.marker(
+                [19.45678959, -99.06003057],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_07cfbd07407a5de256e773d9f5628142 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f312df30654e86895de30d9fdb6ed90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7dad21c7b3a3f851297ed4507d1681a6 = $(`<div id="html_7dad21c7b3a3f851297ed4507d1681a6" style="width: 100.0%; height: 100.0%;">CECATI 128</div>`)[0];
+                popup_0f312df30654e86895de30d9fdb6ed90.setContent(html_7dad21c7b3a3f851297ed4507d1681a6);
+            
+        
+
+        marker_ec2bb5b5e8087428f19259f940daece5.bindPopup(popup_0f312df30654e86895de30d9fdb6ed90)
+        ;
+
+        
+    
+    
+                marker_ec2bb5b5e8087428f19259f940daece5.setIcon(icon_07cfbd07407a5de256e773d9f5628142);
+            
+    
+            var marker_7d7106cfabfc4608378bf80fb0f55d16 = L.marker(
+                [19.4498662, -99.17767503],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_f0a1e199c5217133f935d66ec237e77c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c5f111cbd8187ebe4c1c9a0023c80b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2ef44bf2877034d985fbd1728c34485 = $(`<div id="html_f2ef44bf2877034d985fbd1728c34485" style="width: 100.0%; height: 100.0%;">CECATI 152</div>`)[0];
+                popup_1c5f111cbd8187ebe4c1c9a0023c80b0.setContent(html_f2ef44bf2877034d985fbd1728c34485);
+            
+        
+
+        marker_7d7106cfabfc4608378bf80fb0f55d16.bindPopup(popup_1c5f111cbd8187ebe4c1c9a0023c80b0)
+        ;
+
+        
+    
+    
+                marker_7d7106cfabfc4608378bf80fb0f55d16.setIcon(icon_f0a1e199c5217133f935d66ec237e77c);
+            
+    
+            var marker_fbaff1ca74c28b789d5d73c5737a5fa6 = L.marker(
+                [19.45702747, -99.13813206],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_debc798f9a021b9447492d7487449750 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec7ab0c33d8823da3551864e759adad9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83e02ae3531a2f0c0338a045f8e76464 = $(`<div id="html_83e02ae3531a2f0c0338a045f8e76464" style="width: 100.0%; height: 100.0%;">CECATI 153</div>`)[0];
+                popup_ec7ab0c33d8823da3551864e759adad9.setContent(html_83e02ae3531a2f0c0338a045f8e76464);
+            
+        
+
+        marker_fbaff1ca74c28b789d5d73c5737a5fa6.bindPopup(popup_ec7ab0c33d8823da3551864e759adad9)
+        ;
+
+        
+    
+    
+                marker_fbaff1ca74c28b789d5d73c5737a5fa6.setIcon(icon_debc798f9a021b9447492d7487449750);
+            
+    
+            var marker_ccd4c04397221c19342e8720a767634f = L.marker(
+                [19.48366806, -99.18573502],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_6cf65360f3edc8e32b89fb43adc0255e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e24b673906bfe5f68e6e457cf54f01b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33a5bb3b26116363c7eea37f69f04ef6 = $(`<div id="html_33a5bb3b26116363c7eea37f69f04ef6" style="width: 100.0%; height: 100.0%;">CECATI 155</div>`)[0];
+                popup_e24b673906bfe5f68e6e457cf54f01b0.setContent(html_33a5bb3b26116363c7eea37f69f04ef6);
+            
+        
+
+        marker_ccd4c04397221c19342e8720a767634f.bindPopup(popup_e24b673906bfe5f68e6e457cf54f01b0)
+        ;
+
+        
+    
+    
+                marker_ccd4c04397221c19342e8720a767634f.setIcon(icon_6cf65360f3edc8e32b89fb43adc0255e);
+            
+    
+            var marker_ebc805aee7c0b910ba1f30baa3e2ddde = L.marker(
+                [19.54824857, -99.1242008],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_ccf7e07ec4e815f4a7039ffc0d7977b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd20b76b6808ebe61d77a303862492ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_800bca31221d66824d00fb78c9016909 = $(`<div id="html_800bca31221d66824d00fb78c9016909" style="width: 100.0%; height: 100.0%;">CECATI 156</div>`)[0];
+                popup_fd20b76b6808ebe61d77a303862492ad.setContent(html_800bca31221d66824d00fb78c9016909);
+            
+        
+
+        marker_ebc805aee7c0b910ba1f30baa3e2ddde.bindPopup(popup_fd20b76b6808ebe61d77a303862492ad)
+        ;
+
+        
+    
+    
+                marker_ebc805aee7c0b910ba1f30baa3e2ddde.setIcon(icon_ccf7e07ec4e815f4a7039ffc0d7977b5);
+            
+    
+            var marker_d2185d15eb449f87b7e7b129e0dc5a1b = L.marker(
+                [19.31012733, -99.1064741],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_8b729dbbf0c03825eb3f1d89c80fc95b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc895e59eee000b10fac381006e4f0cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcedb9b4113e71f2913e4527fa2d5b89 = $(`<div id="html_fcedb9b4113e71f2913e4527fa2d5b89" style="width: 100.0%; height: 100.0%;">CECATI 157</div>`)[0];
+                popup_dc895e59eee000b10fac381006e4f0cd.setContent(html_fcedb9b4113e71f2913e4527fa2d5b89);
+            
+        
+
+        marker_d2185d15eb449f87b7e7b129e0dc5a1b.bindPopup(popup_dc895e59eee000b10fac381006e4f0cd)
+        ;
+
+        
+    
+    
+                marker_d2185d15eb449f87b7e7b129e0dc5a1b.setIcon(icon_8b729dbbf0c03825eb3f1d89c80fc95b);
+            
+    
+            var marker_9307304ac46088335912391c1b64df46 = L.marker(
+                [19.45800594, -99.13361323],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_251c9f6294365084c4a7f1476ab2e292 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80497ea1bf0f98167e754fc06ba271ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2bca174bf051a1468eef64e6840dcc6 = $(`<div id="html_f2bca174bf051a1468eef64e6840dcc6" style="width: 100.0%; height: 100.0%;">CECATI 158</div>`)[0];
+                popup_80497ea1bf0f98167e754fc06ba271ff.setContent(html_f2bca174bf051a1468eef64e6840dcc6);
+            
+        
+
+        marker_9307304ac46088335912391c1b64df46.bindPopup(popup_80497ea1bf0f98167e754fc06ba271ff)
+        ;
+
+        
+    
+    
+                marker_9307304ac46088335912391c1b64df46.setIcon(icon_251c9f6294365084c4a7f1476ab2e292);
+            
+    
+            var marker_c76d113d23f7c6e7cbf983e92e926042 = L.marker(
+                [19.44801982, -99.15914233],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_3bf7fa7f6f1f9d9200b042788ea0776b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2224fb5175be8e69661bdb0d65e84865 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4079a3f896c830e2d1925900274c5af = $(`<div id="html_a4079a3f896c830e2d1925900274c5af" style="width: 100.0%; height: 100.0%;">CECATI 162</div>`)[0];
+                popup_2224fb5175be8e69661bdb0d65e84865.setContent(html_a4079a3f896c830e2d1925900274c5af);
+            
+        
+
+        marker_c76d113d23f7c6e7cbf983e92e926042.bindPopup(popup_2224fb5175be8e69661bdb0d65e84865)
+        ;
+
+        
+    
+    
+                marker_c76d113d23f7c6e7cbf983e92e926042.setIcon(icon_3bf7fa7f6f1f9d9200b042788ea0776b);
+            
+    
+            var marker_564aec52ccd7d68f24fde25811203321 = L.marker(
+                [19.32625659, -99.04657117],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_491c1d290de83f9adab1df63953ac2f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0cc3e14811d12b376b3710a12a1d3d3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e84ad0f859bd14a8870f07a704da849b = $(`<div id="html_e84ad0f859bd14a8870f07a704da849b" style="width: 100.0%; height: 100.0%;">CECATI 171</div>`)[0];
+                popup_0cc3e14811d12b376b3710a12a1d3d3a.setContent(html_e84ad0f859bd14a8870f07a704da849b);
+            
+        
+
+        marker_564aec52ccd7d68f24fde25811203321.bindPopup(popup_0cc3e14811d12b376b3710a12a1d3d3a)
+        ;
+
+        
+    
+    
+                marker_564aec52ccd7d68f24fde25811203321.setIcon(icon_491c1d290de83f9adab1df63953ac2f2);
+            
+    
+            var marker_6b8b7bda144a14d61445109441f9857b = L.marker(
+                [19.38230026, -99.14008543],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_1fea8dd08f6dd8892ead74156ec707cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6328edcb33c24feaeb30202b26b7033d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2abfb69dd59366256ef216e55d756dc9 = $(`<div id="html_2abfb69dd59366256ef216e55d756dc9" style="width: 100.0%; height: 100.0%;">CECATI 173</div>`)[0];
+                popup_6328edcb33c24feaeb30202b26b7033d.setContent(html_2abfb69dd59366256ef216e55d756dc9);
+            
+        
+
+        marker_6b8b7bda144a14d61445109441f9857b.bindPopup(popup_6328edcb33c24feaeb30202b26b7033d)
+        ;
+
+        
+    
+    
+                marker_6b8b7bda144a14d61445109441f9857b.setIcon(icon_1fea8dd08f6dd8892ead74156ec707cb);
+            
+    
+            var marker_8a2c2cddb9ae2fd88db79e82c5f525fd = L.marker(
+                [19.36295353, -99.07493696],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_394209fd2897ee69f382a0f2f768c5f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a019c8aed1c896f86cf986727adda3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4838c50156927f8d27ecf8ba76bf10bc = $(`<div id="html_4838c50156927f8d27ecf8ba76bf10bc" style="width: 100.0%; height: 100.0%;">CECATI 176</div>`)[0];
+                popup_4a019c8aed1c896f86cf986727adda3f.setContent(html_4838c50156927f8d27ecf8ba76bf10bc);
+            
+        
+
+        marker_8a2c2cddb9ae2fd88db79e82c5f525fd.bindPopup(popup_4a019c8aed1c896f86cf986727adda3f)
+        ;
+
+        
+    
+    
+                marker_8a2c2cddb9ae2fd88db79e82c5f525fd.setIcon(icon_394209fd2897ee69f382a0f2f768c5f7);
+            
+    
+            var marker_c7378421be6b4ac5abeef63ba30e1ecf = L.marker(
+                [19.3690757, -99.14263716],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_3a2481d410c4c9cc1941fda0945f51aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e209d95c36b8e4101574181c3d132969 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e666e61a98e7eaba643f17dcd4c21dad = $(`<div id="html_e666e61a98e7eaba643f17dcd4c21dad" style="width: 100.0%; height: 100.0%;">CECATI 187</div>`)[0];
+                popup_e209d95c36b8e4101574181c3d132969.setContent(html_e666e61a98e7eaba643f17dcd4c21dad);
+            
+        
+
+        marker_c7378421be6b4ac5abeef63ba30e1ecf.bindPopup(popup_e209d95c36b8e4101574181c3d132969)
+        ;
+
+        
+    
+    
+                marker_c7378421be6b4ac5abeef63ba30e1ecf.setIcon(icon_3a2481d410c4c9cc1941fda0945f51aa);
+            
+    
+            var marker_76973fb5b7c17a596c2580445fa2cab5 = L.marker(
+                [19.27683455, -99.00776267],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_3ef20d0664d2d42883f7ed18aa7a81b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd7cc52f1b3a9beb9528013d944db17e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12417c703a5cacdbc83b14370409bd08 = $(`<div id="html_12417c703a5cacdbc83b14370409bd08" style="width: 100.0%; height: 100.0%;">CECATI 188</div>`)[0];
+                popup_dd7cc52f1b3a9beb9528013d944db17e.setContent(html_12417c703a5cacdbc83b14370409bd08);
+            
+        
+
+        marker_76973fb5b7c17a596c2580445fa2cab5.bindPopup(popup_dd7cc52f1b3a9beb9528013d944db17e)
+        ;
+
+        
+    
+    
+                marker_76973fb5b7c17a596c2580445fa2cab5.setIcon(icon_3ef20d0664d2d42883f7ed18aa7a81b7);
+            
+    
+            var marker_54396346f98c954d8bb79b4a038a87b1 = L.marker(
+                [19.3962239, -99.21139934],
+                {
+}
+            ).addTo(feature_group_2fb4970bdd8290e6c3bef646ef5bab6a);
+        
+    
+            var icon_43120c903b16e5212c4fa646a4bb3df7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_05adb73c4643de93fe2119f4bcab0362 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_097fd4cccc3ce6998953363f116447eb = $(`<div id="html_097fd4cccc3ce6998953363f116447eb" style="width: 100.0%; height: 100.0%;">CECATI 194</div>`)[0];
+                popup_05adb73c4643de93fe2119f4bcab0362.setContent(html_097fd4cccc3ce6998953363f116447eb);
+            
+        
+
+        marker_54396346f98c954d8bb79b4a038a87b1.bindPopup(popup_05adb73c4643de93fe2119f4bcab0362)
+        ;
+
+        
+    
+    
+                marker_54396346f98c954d8bb79b4a038a87b1.setIcon(icon_43120c903b16e5212c4fa646a4bb3df7);
+            
+    
+            feature_group_2fb4970bdd8290e6c3bef646ef5bab6a.addTo(map_96cc3412369e7a82f1f8a19588d5d052);
+        
+    
+            var feature_group_c728bed85c352962b71ed2ad488797f8 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_cc2dcbb2332ee874581efe855775515b = L.marker(
+                [19.48847814, -99.20951344],
+                {
+}
+            ).addTo(feature_group_c728bed85c352962b71ed2ad488797f8);
+        
+    
+            var icon_29ea08d8ecdd27142cdd8f3008022215 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_012c22a27a2d62ef804ded922cae5394 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c05d238a956402cd6b83182cd141234f = $(`<div id="html_c05d238a956402cd6b83182cd141234f" style="width: 100.0%; height: 100.0%;">AZCAPOTZALCO</div>`)[0];
+                popup_012c22a27a2d62ef804ded922cae5394.setContent(html_c05d238a956402cd6b83182cd141234f);
+            
+        
+
+        marker_cc2dcbb2332ee874581efe855775515b.bindPopup(popup_012c22a27a2d62ef804ded922cae5394)
+        ;
+
+        
+    
+    
+                marker_cc2dcbb2332ee874581efe855775515b.setIcon(icon_29ea08d8ecdd27142cdd8f3008022215);
+            
+    
+            var marker_ca2cc2ce1ac851b861b72a5f89d69cf2 = L.marker(
+                [19.30907795, -99.15988307],
+                {
+}
+            ).addTo(feature_group_c728bed85c352962b71ed2ad488797f8);
+        
+    
+            var icon_3bd1a821a5f156755446f30d5b7adadf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89549c267861774a12cd644cbddc898c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e41e534fa2dc915baa11c75af153c00a = $(`<div id="html_e41e534fa2dc915baa11c75af153c00a" style="width: 100.0%; height: 100.0%;">COYOACAN</div>`)[0];
+                popup_89549c267861774a12cd644cbddc898c.setContent(html_e41e534fa2dc915baa11c75af153c00a);
+            
+        
+
+        marker_ca2cc2ce1ac851b861b72a5f89d69cf2.bindPopup(popup_89549c267861774a12cd644cbddc898c)
+        ;
+
+        
+    
+    
+                marker_ca2cc2ce1ac851b861b72a5f89d69cf2.setIcon(icon_3bd1a821a5f156755446f30d5b7adadf);
+            
+    
+            var marker_21404f2e0715f7284d32983bf6b966be = L.marker(
+                [19.45284651, -99.08056208],
+                {
+}
+            ).addTo(feature_group_c728bed85c352962b71ed2ad488797f8);
+        
+    
+            var icon_fc01eca8a447af83296ce242b27289cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01d2b57a75eae7c6bdd6359623ccc954 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5253e0460ebe1790abfe79e10a6124a4 = $(`<div id="html_5253e0460ebe1790abfe79e10a6124a4" style="width: 100.0%; height: 100.0%;">GUSTAVO A MADERO</div>`)[0];
+                popup_01d2b57a75eae7c6bdd6359623ccc954.setContent(html_5253e0460ebe1790abfe79e10a6124a4);
+            
+        
+
+        marker_21404f2e0715f7284d32983bf6b966be.bindPopup(popup_01d2b57a75eae7c6bdd6359623ccc954)
+        ;
+
+        
+    
+    
+                marker_21404f2e0715f7284d32983bf6b966be.setIcon(icon_fc01eca8a447af83296ce242b27289cb);
+            
+    
+            var marker_d3b95610622df6685968723cb8ff8331 = L.marker(
+                [19.43544025, -99.12908886],
+                {
+}
+            ).addTo(feature_group_c728bed85c352962b71ed2ad488797f8);
+        
+    
+            var icon_d14e79385ebb95319e2007d0db5d3c63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f38113a41ec14c61b5e3e97a7b6eb4a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4e7b4d4c2adc3e42811c0f2260864db = $(`<div id="html_c4e7b4d4c2adc3e42811c0f2260864db" style="width: 100.0%; height: 100.0%;">JUSTOSIERRA</div>`)[0];
+                popup_f38113a41ec14c61b5e3e97a7b6eb4a8.setContent(html_c4e7b4d4c2adc3e42811c0f2260864db);
+            
+        
+
+        marker_d3b95610622df6685968723cb8ff8331.bindPopup(popup_f38113a41ec14c61b5e3e97a7b6eb4a8)
+        ;
+
+        
+    
+    
+                marker_d3b95610622df6685968723cb8ff8331.setIcon(icon_d14e79385ebb95319e2007d0db5d3c63);
+            
+    
+            var marker_729a9ef06a26ab2e216372a81390cf5b = L.marker(
+                [19.30965561, -99.25768908],
+                {
+}
+            ).addTo(feature_group_c728bed85c352962b71ed2ad488797f8);
+        
+    
+            var icon_999a1a3287b4ea0e56e26d708f5c9199 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0447dbe7fa3a4a141076e6fd47dca06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ec9cfb2f2bd2d40057c39cc28bcf936 = $(`<div id="html_7ec9cfb2f2bd2d40057c39cc28bcf936" style="width: 100.0%; height: 100.0%;">MAGDALENA CONTRERAS</div>`)[0];
+                popup_b0447dbe7fa3a4a141076e6fd47dca06.setContent(html_7ec9cfb2f2bd2d40057c39cc28bcf936);
+            
+        
+
+        marker_729a9ef06a26ab2e216372a81390cf5b.bindPopup(popup_b0447dbe7fa3a4a141076e6fd47dca06)
+        ;
+
+        
+    
+    
+                marker_729a9ef06a26ab2e216372a81390cf5b.setIcon(icon_999a1a3287b4ea0e56e26d708f5c9199);
+            
+    
+            var marker_d2880a87d911cde0f746a87eb6f7025a = L.marker(
+                [19.45267422, -99.16970218],
+                {
+}
+            ).addTo(feature_group_c728bed85c352962b71ed2ad488797f8);
+        
+    
+            var icon_92543acd5206bf1f646dce78182e8b45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc6a9128263707f4b57832626d4ae99b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_045eedff8b72753838d4443099dfd7f3 = $(`<div id="html_045eedff8b72753838d4443099dfd7f3" style="width: 100.0%; height: 100.0%;">CASCO SANTO TOMAS</div>`)[0];
+                popup_fc6a9128263707f4b57832626d4ae99b.setContent(html_045eedff8b72753838d4443099dfd7f3);
+            
+        
+
+        marker_d2880a87d911cde0f746a87eb6f7025a.bindPopup(popup_fc6a9128263707f4b57832626d4ae99b)
+        ;
+
+        
+    
+    
+                marker_d2880a87d911cde0f746a87eb6f7025a.setIcon(icon_92543acd5206bf1f646dce78182e8b45);
+            
+    
+            var marker_61051053d3eefa34fe07108fc9c6daa8 = L.marker(
+                [19.47826363, -99.16330425],
+                {
+}
+            ).addTo(feature_group_c728bed85c352962b71ed2ad488797f8);
+        
+    
+            var icon_42d03f4cfcb35af0caf5656958cfc236 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbf6bde98c725e3c942024ab098380ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d23a2571febe7cd1a6ada68e3f61e6b = $(`<div id="html_8d23a2571febe7cd1a6ada68e3f61e6b" style="width: 100.0%; height: 100.0%;">EUZKADI</div>`)[0];
+                popup_bbf6bde98c725e3c942024ab098380ff.setContent(html_8d23a2571febe7cd1a6ada68e3f61e6b);
+            
+        
+
+        marker_61051053d3eefa34fe07108fc9c6daa8.bindPopup(popup_bbf6bde98c725e3c942024ab098380ff)
+        ;
+
+        
+    
+    
+                marker_61051053d3eefa34fe07108fc9c6daa8.setIcon(icon_42d03f4cfcb35af0caf5656958cfc236);
+            
+    
+            var marker_981f8d22215b03c94745799258824c5d = L.marker(
+                [19.33209223, -99.17098253],
+                {
+}
+            ).addTo(feature_group_c728bed85c352962b71ed2ad488797f8);
+        
+    
+            var icon_0e6dae545910b958eebd566f365402ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f033eae697c33526c407bba3aebadf2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84951fde596d6aa093b86b4f3ef26f8e = $(`<div id="html_84951fde596d6aa093b86b4f3ef26f8e" style="width: 100.0%; height: 100.0%;">COPILCO MAZA DE JUAREZ</div>`)[0];
+                popup_f033eae697c33526c407bba3aebadf2f.setContent(html_84951fde596d6aa093b86b4f3ef26f8e);
+            
+        
+
+        marker_981f8d22215b03c94745799258824c5d.bindPopup(popup_f033eae697c33526c407bba3aebadf2f)
+        ;
+
+        
+    
+    
+                marker_981f8d22215b03c94745799258824c5d.setIcon(icon_0e6dae545910b958eebd566f365402ea);
+            
+    
+            var marker_5a4879f9b99b87f63d1046f029b8b0d1 = L.marker(
+                [19.193538, -99.01895666],
+                {
+}
+            ).addTo(feature_group_c728bed85c352962b71ed2ad488797f8);
+        
+    
+            var icon_be64babe80349a16638f5e823d421233 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47af2e8c8624d1a755ae6c5940519039 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0205b74096d3ffa457681880662c49a = $(`<div id="html_a0205b74096d3ffa457681880662c49a" style="width: 100.0%; height: 100.0%;">MILPA ALTA HERRERIAS</div>`)[0];
+                popup_47af2e8c8624d1a755ae6c5940519039.setContent(html_a0205b74096d3ffa457681880662c49a);
+            
+        
+
+        marker_5a4879f9b99b87f63d1046f029b8b0d1.bindPopup(popup_47af2e8c8624d1a755ae6c5940519039)
+        ;
+
+        
+    
+    
+                marker_5a4879f9b99b87f63d1046f029b8b0d1.setIcon(icon_be64babe80349a16638f5e823d421233);
+            
+    
+            var marker_663c2c506afcfff37d77fd6a2968f682 = L.marker(
+                [19.17762957, -99.00322111],
+                {
+}
+            ).addTo(feature_group_c728bed85c352962b71ed2ad488797f8);
+        
+    
+            var icon_b4f07b39c06241e1f876cb8a1ed97c8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b0c747a15cc340f5ffa95001a23ee5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75e22415c8256867a5a069e98f194e9f = $(`<div id="html_75e22415c8256867a5a069e98f194e9f" style="width: 100.0%; height: 100.0%;">MILPA ALTA OLIMPICA</div>`)[0];
+                popup_4b0c747a15cc340f5ffa95001a23ee5f.setContent(html_75e22415c8256867a5a069e98f194e9f);
+            
+        
+
+        marker_663c2c506afcfff37d77fd6a2968f682.bindPopup(popup_4b0c747a15cc340f5ffa95001a23ee5f)
+        ;
+
+        
+    
+    
+                marker_663c2c506afcfff37d77fd6a2968f682.setIcon(icon_b4f07b39c06241e1f876cb8a1ed97c8e);
+            
+    
+            feature_group_c728bed85c352962b71ed2ad488797f8.addTo(map_96cc3412369e7a82f1f8a19588d5d052);
+        
+    
+            var layer_control_79c56523db00489d75a48b60dfc30b5e_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9d98b0912432cfc1005267e26f6f4ba8,
+                },
+                overlays :  {
+                    "CECATI" : feature_group_2fb4970bdd8290e6c3bef646ef5bab6a,
+                    "URC" : feature_group_c728bed85c352962b71ed2ad488797f8,
+                },
+            };
+            let layer_control_79c56523db00489d75a48b60dfc30b5e = L.control.layers(
+                layer_control_79c56523db00489d75a48b60dfc30b5e_layers.base_layers,
+                layer_control_79c56523db00489d75a48b60dfc30b5e_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_96cc3412369e7a82f1f8a19588d5d052);
+
+        
+</script>
+</html>
