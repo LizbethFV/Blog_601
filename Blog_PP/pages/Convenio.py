@@ -395,37 +395,52 @@ layout = html.Div([
 
     html.H1("Hacia la optimización de espacios educativos: una propuesta de colaboración entre la UNRC y el CECATI", 
             className="animate-on-scroll",
-            style={'font-family': 'Verdana', 'font-size': '25px', 'text-align': 'center','margin-bottom': '20px','font-weight': 'bold'}),
+            style={'font-family': 'Verdana', 'font-size': '25px', 'text-align': 'center','margin-bottom': '20px','font-weight': 'bold','text-align': 'center'}),
     html.P("Después de conocer el papel fundamental que desempeñan tanto la Universidad Nacional Rosario Castellanos (UNRC) como los Centros de Capacitación para el Trabajo Industrial (CECATI) en la formación académica y técnica de miles de estudiantes, este proyecto plantea una propuesta estratégica con el objetivo de optimizar el uso de los espacios educativos disponibles en la Ciudad de México. La finalidad es establecer un convenio de colaboración entre la UNRC y el CECATI, que permita utilizar las instalaciones de los centros CECATI como subsedes temporales o complementarias para actividades académicas de la UNRC. Esta propuesta se plantea sin interferir en el funcionamiento regular del CECATI, respetando sus horarios, especialidades y servicios.",
            className="animate-on-scroll",
-           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
+           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1400px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto', }),
     html.P("¿Por qué es importante esta colaboración?", 
            className="animate-on-scroll",
-           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
+           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1400px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
     html.P("Actualmente, la demanda por un lugar en la educación superior sigue creciendo, y uno de los principales retos para la UNRC ha sido la disponibilidad de espacios físicos en sus sedes. Esta alianza permitiría:",
            className="animate-on-scroll",
-           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
+           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1400px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
     html.P("• Ampliar la cobertura educativa de la UNRC sin necesidad de una inversión inmediata en nueva infraestructura.",
            className="animate-on-scroll",
-           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
+           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1400px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
     html.P("• Acercar la educación a más estudiantes, especialmente a aquellos que enfrentan dificultades de movilidad o traslado hacia las unidades académicas principales.",
            className="animate-on-scroll",
-           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
+           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1400px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
     html.P("• Fortalecer la vinculación institucional, aprovechando la experiencia técnica y operativa del CECATI, y fomentando el uso eficiente de los recursos públicos.",
            className="animate-on-scroll",
-           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
+           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1400px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
     html.P("• Con esta sinergia, la UNRC podría incrementar la oferta de lugares disponibles para nuevas y nuevos estudiantes, contribuyendo a una educación más accesible, equitativa y descentralizada.",
            className="animate-on-scroll",
-           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto'}),
+           style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1400px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto','margin-bottom': '50px'}),
   
+html.Div([
+    html.H4("Ubicación y distribución de las unidades académicas en la CDMX",
+            className="animate-on-scroll",
+            style={'font-family': 'Verdana', 'font-size': '18px','font-weight': 'bold', 'text-align': 'center', 'margin-top': '40px'}),
+            html.P("Como primer paso en este proyecto, realizamos un mapeo de las unidades académicas de la Universidad Rosario Castellanos (UNRC) y de los Centros de Capacitación para el Trabajo Industrial (CECATI), con el objetivo de visualizar su distribución geográfica en la Ciudad de México.",
+                   className="animate-on-scroll",
+                   style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1300px', 'line-height': '1.6', 'text-align': 'center', 'margin': '0 auto'}),
+    html.Iframe(
+        srcDoc=open('CECATI_URC_Mapa.html', 'r', encoding='utf-8').read(),
+        width='80%',
+        height='600px',
+        style={'border': '1px solid #ccc', 'margin': '0 auto', 'display': 'block','margin-bottom': '50px'}
+    )
+]),
+    
     #gráfica izquierda, texto derecha
     html.Div([
         html.Div([
             dcc.Graph(figure=fig_CECATI13, className="animate-on-scroll")
-        ], style={'flex': '1', 'padding': '10px'}),
+        ], style={'flex': '1', 'padding': '10px','margin-bottom': '50px'}),
 
         html.Div([
-            html.H4("Caso de estudio: CECATI 13 como subsede potencial de la UNRC",
+            html.H4("Caso de estudio: CECATI 13",
                     className="animate-on-scroll",
                     style={'font-family': 'Verdana', 'font-size': '18px','font-weight': 'bold'}),
             html.P("Como muestra para esta propuesta, se tomó la unidad CECATI 13, una de las más grandes y mejor equipadas de la Ciudad de México,. Esta unidad ha mostrado una evolución constante durante el periodo 2019–2024, tanto en matrícula como en diversificación de especialidades, lo cual la convierte en un excelente ejemplo para analizar la viabilidad del convenio. Cabe aclarar que el método que utlizaremos se puede aplicar a las demás instituciones.",
@@ -433,7 +448,7 @@ layout = html.Div([
                    style={'font-family': 'Verdana', 'font-size': '16px'})
         ], style={'flex': '1', 'padding': '10px', 'display': 'flex',
                   'flex-direction': 'column', 'justify-content': 'center'})
-    ], style={'display': 'flex', 'flex-direction': 'row', 'margin-bottom': '40px'}),
+    ], style={'display': 'flex', 'flex-direction': 'row', 'margin-bottom': '50px'}),
 
     #Texto izquierda, gráfica derecha
     html.Div([
@@ -465,7 +480,7 @@ layout = html.Div([
         html.Div([
             dcc.Graph(figure=tabla, className="animate-on-scroll")
         ], style={'flex': '1', 'padding': '10px'})
-    ], style={'display': 'flex', 'flex-direction': 'row', 'margin-bottom': '40px'}),
+    ], style={'display': 'flex', 'flex-direction': 'row', 'margin-bottom': '50px'}),
 
     html.Div([
         html.Div([
@@ -485,8 +500,8 @@ layout = html.Div([
             ],  style={
                   'padding': '0px',
                   'overflow-x': 'hidden',
-                  'margin-bottom': '0px',  # elimina espacio debajo
-                  'height': 'auto'         # asegura que no fije altura extra
+                  'margin-bottom': '0px',  
+                  'height': 'auto'         
 })
             
         ]),
@@ -514,7 +529,7 @@ layout = html.Div([
             style={'font-family': 'Verdana', 'font-size': '16px', 'text-align': 'justify', 'max-width': '1200px', 'margin': '0 auto'}),
          html.H4("Horario acordado",
             className="animate-on-scroll",    
-            style={'font-family': 'Verdana', 'font-size': '16px', 'text-align': 'justify', 'max-width': '1200px', 'margin': '0 auto','font-weight': 'bold'}),
+            style={'font-family': 'Verdana', 'font-size': '16px', 'text-align': 'justify', 'max-width': '1200px', 'margin': '0 auto','font-weight': 'bold','margin-bottom': '10px'}),
          html.P("Tomando en cuenta esta modalidad, así como la disponibilidad real del CECATI 13, se logró un ajuste en su calendario interno que permite que la Universidad utilice sus instalaciones los siguientes días y horarios:",
             className="animate-on-scroll",    
             style={'font-family': 'Verdana', 'font-size': '16px', 'text-align': 'justify', 'max-width': '1200px', 'margin': '0 auto'}),
@@ -537,8 +552,23 @@ layout = html.Div([
             dcc.Graph(figure=tabla_hn, className="animate-on-scroll")
             ],  style={
                 'padding': '0px',
-                'overflow-x': 'hidden'})
+                'overflow-x': 'hidden','margin-bottom': '40px'})
          ]),
+     html.Div([
+         html.H4("Conclusión",
+             className="animate-on-scroll",
+             style={'font-family': 'Verdana', 'font-size': '18px', 'font-weight': 'bold', 'text-align': 'center'}),
+         html.P("El convenio entre la Universidad Rosario Castellanos (UNRC) y los Centros de Capacitación para el Trabajo Industrial (CECATI) representa una estrategia innovadora y colaborativa para optimizar el uso de los espacios educativos públicos en la Ciudad de México. Esta alianza permite aprovechar la infraestructura existente del CECATI sin interferir en sus actividades esenciales, al mismo tiempo que amplía la cobertura y capacidad de atención de la UNRC, respondiendo a la creciente demanda de educación superior en la capital.",
+                className="animate-on-scroll",    
+                style={'font-family': 'Verdana', 'font-size': '16px', 'text-align': 'justify', 'max-width': '1200px', 'margin': '0 auto'}),
+         html.P("Además, esta colaboración refuerza el compromiso de ambas instituciones con el acceso equitativo, inclusivo y territorialmente distribuido a la educación, brindando oportunidades reales a jóvenes que, por cuestiones de espacio o distancia, no habían podido continuar sus estudios universitarios.",
+                className="animate-on-scroll",    
+                style={'font-family': 'Verdana', 'font-size': '16px', 'text-align': 'justify', 'max-width': '1200px', 'margin': '0 auto'}),
+         html.P("El piloto desarrollado con el CECATI 13 demuestra que una correcta planeación de horarios y uso compartido de instalaciones es viable y beneficiosa para ambas partes. Este modelo puede servir como referente para futuros convenios que busquen fortalecer la educación pública a través de sinergias institucionales.",
+                className="animate-on-scroll",    
+                style={'font-family': 'Verdana', 'font-size': '16px', 'text-align': 'justify', 'max-width': '1200px', 'margin': '0 auto','margin-bottom': '50px'}),
+         ]),
+     
      html.Div([
          html.H3("Convenios Educativos",
                  className="animate-on-scroll",
@@ -553,6 +583,6 @@ layout = html.Div([
                 download='CONVENIO DE COLABORACIÓN ENTRE LA UNIVERSIDAD NACIONAL ROSARIO CASTELLANOS Y EL CENTRO DE CAPACITACIÓN PARA EL TRABAJO INDUSTRIAL NÚMERO 13 PARA EL USO DE INSTALACIONES.pdf',
                 style={"fontSize": "18px", "color": "blue", "textDecoration": "underline"}),
 
-], style={'text-align': 'center'})
-
+], style={'text-align': 'center','margin-bottom': '50px'}),
+     
     ])
