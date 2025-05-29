@@ -7,7 +7,7 @@ import plotly.express as px
 from dash import html, register_page
 
 #Registramos la página
-dash.register_page(__name__, path="/", name="Universidad Nacional Rosario Castellanos")
+dash.register_page(__name__, path="/", name="1.Universidad Nacional Rosario Castellanos")
 
 # Cargar datos limpios
 Colores = ['#3B0815','#500207','#77030B', '#9F040E', '#C70512', '#F92432', '#FA4C58','#9A0924', '#60061F','#4F0527', '#3B0815', '#3B0815','#500207','#77030B', '#9F040E', '#C70512', '#F92432', '#FA4C58','#9A0924', '#60061F','#4F0527', '#3B0815' ]
@@ -517,7 +517,18 @@ fig_top5.update_layout(
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 layout = html.Div([
-    # Encabezado y texto introductorio centrado y con espacio superior
+    html.Div([
+        html.P('Elaborado por:',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '0px'}),
+        html.P('Lizbeth Fernandez Viñas',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '0px'}),
+        html.P('Isis Minerva Osorio Cano',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '0px'}),
+        html.P('Rocio Olvera Guzmán',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '10px'}),
+        html.P('Publicado el 29 de mayo de 2025',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','margin-bottom': '20px','font-weight': 'bold'}),
+    ]),
     html.Div([
         html.H1(
             "La evolución de la Universidad Rosario Castellanos: una alternativa educativa para la Ciudad de México", className="animate-on-scroll",
@@ -581,6 +592,5 @@ layout = html.Div([
         ],
             style={'flex': '1', 'padding': '10px'})
     ], style={'display': 'flex', 'flex-direction': 'row', 'margin-bottom': '40px'})
-])
 
-
+       ])
