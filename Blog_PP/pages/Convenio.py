@@ -5,6 +5,7 @@ import plotly.graph_objs as go
 import plotly.express as px
 from dash import html, register_page
 from datetime import time
+import os
 # Registra la página con un nombre y ruta personalizada
 dash.register_page(__name__, path="/convenios", name="3.Convenio")
 
