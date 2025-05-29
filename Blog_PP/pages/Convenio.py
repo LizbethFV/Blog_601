@@ -8,7 +8,9 @@ from datetime import time
 import os
 # Registra la página con un nombre y ruta personalizada
 dash.register_page(__name__, path="/convenios", name="3.Convenio")
-
+current_directory = os.path.dirname(os.path.abspath(__file__))
+# Construir la ruta completa al archivo HTML
+html_file_path = os.path.join(current_directory, 'CECATI_URC_Mapa.html')
 df_CECATI_13N = pd.read_csv('https://raw.githubusercontent.com/LizbethFV/Bases_de_Datos_P.P_601/refs/heads/main/CECATI%20-%20CECATI%2013%20numeralia.csv')
 df_CECATI_13H = pd.read_csv('https://raw.githubusercontent.com/LizbethFV/Bases_de_Datos_P.P_601/refs/heads/main/CECATI%20-%20CECATI_13_Hor.csv')
 df_CECATI_13I = pd.read_csv('https://raw.githubusercontent.com/LizbethFV/Bases_de_Datos_P.P_601/refs/heads/main/CECATI%20-%20CECATI_13_Instalaciones.csv')
