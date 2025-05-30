@@ -189,7 +189,7 @@ tab_CECATI.update_layout(
             yanchor="top"
         )
     ],
-    title="Tabla 1. Especialidades de los CECATI en la CDMX"
+    title="Gráfica 2. Especialidades de los CECATI en la CDMX"
 )
 #---------------------------------------------------------------------------------------------------------
 layout = html.Div([
