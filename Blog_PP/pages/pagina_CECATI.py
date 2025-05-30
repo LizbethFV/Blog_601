@@ -6,7 +6,7 @@ import plotly.express as px
 from dash import html, register_page
 
 #Registrar la segunda pagina
-dash.register_page(__name__, path="/CECATI", name="2.CECATI")
+dash.register_page(__name__, path="/CECATI", name="CECATI", order=2)
 
 df_CECATI_OA = pd.read_csv('https://raw.githubusercontent.com/LizbethFV/Bases_de_Datos_P.P_601/refs/heads/main/CECATI%20-%20Numeralia%20inscritos-acreditados%20.csv')
 df_CECATI_CE = pd.read_csv('https://raw.githubusercontent.com/LizbethFV/Bases_de_Datos_P.P_601/refs/heads/main/CECATI%20-%20Especialidades.csv')
@@ -201,6 +201,8 @@ layout = html.Div([
         html.P('Isis Minerva Osorio Cano',
                style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '0px'}),
         html.P('Rocio Olvera Guzmán',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '10px'}),
+        html.P('Licenciatura en Ciencia de Datos para Negocios',
                style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '10px'}),
         html.P('Publicado el 29 de mayo de 2025',
                style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','margin-bottom': '20px','font-weight': 'bold'}),
