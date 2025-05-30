@@ -102,7 +102,7 @@ fig_CECATI_M.add_trace(go.Funnel(
 
 #damos fromato
 fig_CECATI_M.update_layout(
-    title='Inscritos y Acreditados Historico y por Año del CECATI',
+    title='Gráfica 1. Inscritos y Acreditados Historico y por Año del CECATI',
     title_font=dict(size=20, color='black'),
     font=dict(family='Verdana', size=15, color='black'),
     width=900,
@@ -189,7 +189,7 @@ tab_CECATI.update_layout(
             yanchor="top"
         )
     ],
-    title="Especialidades de los CECATI en la CDMX"
+    title="Tabla 1. Especialidades de los CECATI en la CDMX"
 )
 #---------------------------------------------------------------------------------------------------------
 layout = html.Div([
