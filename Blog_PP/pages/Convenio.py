@@ -402,6 +402,8 @@ layout = html.Div([
                style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '0px'}),
         html.P('Rocio Olvera Guzmán',
                style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '10px'}),
+       html.P('Licenciatura en Ciencia de Datos para Negocios',
+               style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','font-weight': 'bold','margin-bottom': '10px'}),
         html.P('Publicado el 29 de mayo de 2025',
                style={'font-family': 'Verdana', 'font-size': '12px', 'text-align': 'left','margin-bottom': '20px','font-weight': 'bold'}),
     ]),
