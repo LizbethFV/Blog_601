@@ -111,7 +111,7 @@ fig_CECATI13.add_trace(go.Funnel(
 
 #damos fromato
 fig_CECATI13.update_layout(
-    title='Resultados Académicos CECATI 13',
+    title='Gáfica 1. Resultados Académicos CECATI 13',
     title_font=dict(size=20, color='black'),
     font=dict(family='Verdana', size=15, color='black'),
     width=900,
@@ -171,7 +171,7 @@ tabla = go.Figure(
 
 # Título y ajustes
 tabla.update_layout(
-    title="Instalaciones del CECATI 13",
+    title="Gráfica 2. Instalaciones del CECATI 13",
     width=900,
     height=500,
     paper_bgcolor='white',
@@ -271,7 +271,7 @@ tabla_h.update_layout(
             yanchor="top"
         )
     ],
-    title="Horarios de los Cursos del CECATI 13"
+    title="Gráfica 3. Horarios de los Cursos del CECATI 13"
 )
 #------------------------------------------------------------------------------------------------------------
 #Horario CECATI 13 modificados 
@@ -389,7 +389,7 @@ tabla_hn.update_layout(
             yanchor="top"
         )
     ],
-    title="Nuevo Horario del CECATI 13"
+    title="Grafica 4. Nuevo Horario del CECATI 13"
 )
 #---------------------------------------------------------------------------------------------------------
 layout = html.Div([
@@ -434,7 +434,7 @@ layout = html.Div([
            style={'font-family': 'Verdana', 'font-size': '16px', 'max-width': '1400px', 'line-height': '1.6', 'text-align': 'left', 'margin': '0 auto','margin-bottom': '50px'}),
   
 html.Div([
-    html.H4("Ubicación y distribución de las unidades académicas en la CDMX",
+    html.H4("Grafica 5. Ubicación y distribución de las unidades académicas en la CDMX",
             className="animate-on-scroll",
             style={'font-family': 'Verdana', 'font-size': '18px','font-weight': 'bold', 'text-align': 'center', 'margin-top': '40px'}),
             html.P("Como primer paso en este proyecto, realizamos un mapeo de las unidades académicas de la Universidad Rosario Castellanos (UNRC) y de los Centros de Capacitación para el Trabajo Industrial (CECATI), con el objetivo de visualizar su distribución geográfica en la Ciudad de México.",
