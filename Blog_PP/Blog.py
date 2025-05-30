@@ -40,7 +40,7 @@ Blog.layout = html.Div([
                            'margin-bottom': '20px'})
         ], style={'padding-bottom': '10px', 'padding-top': '10px'}),
 
-        html.H5("Menú",
+        html.H5("Posts",
                 className="text-uppercase mb-3",
                 style={'color': 'white', 'padding-left': '20px'}),
         dbc.Nav(
