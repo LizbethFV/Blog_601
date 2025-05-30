@@ -95,7 +95,7 @@ fig_ODE.add_trace(go.Funnel(
 fig_ODE.update_layout(
     width=900,
     height=500,
-    title='Aspirantes en Proceso de Selección, Seleccionados y Egresados',
+    title='Gráfica 1. Aspirantes en Proceso de Selección, Seleccionados y Egresados',
     title_font=dict(size=20, color='black'),
     font=dict(family='Verdana', size=15, color='black'),
     paper_bgcolor='white',
@@ -207,7 +207,7 @@ figLic_presencial.add_trace(go.Bar(name='Presencial',
 ))
 
 figLic_presencial.update_layout(
-    title='Licenciaturas en la Modalidad Presencial',
+    title='Gráfica 2. Licenciaturas en la Modalidad Presencial',
     title_font=dict(size=20, color='black'),
     font=dict(family='Verdana', size=15, color='black'),
     width=1000,
@@ -312,7 +312,7 @@ UA.add_trace(go.Scatter(
     marker=dict(color=Colores2[11])
 ))
 UA.update_layout(
-    title='Matricula por Unidad Académica',
+    title='Gráfica 3. Matricula por Unidad Académica',
     title_font=dict(size=20, color='black'),
     font=dict(family='Verdana', size=15, color='black'),
     width=1000,
@@ -503,7 +503,7 @@ fig_top5.update_layout(
             yanchor="top"
         )
     ],#Le Damos formato a las graficas
-    title="5 Licenciaturas mas Demandadas por Año y Unidad Académica",
+    title="Gráfica 4. 5 Licenciaturas mas Demandadas por Año y Unidad Académica",
     title_x=0.5,
     width=900,
     height=600,
