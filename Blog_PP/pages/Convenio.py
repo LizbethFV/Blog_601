@@ -7,7 +7,7 @@ from dash import html, register_page
 from datetime import time
 import os
 # Registra la página con un nombre y ruta personalizada
-dash.register_page(__name__, path="/convenios", name="3.Convenio")
+dash.register_page(__name__, path="/convenios", name="Convenio", order=3)
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 # Construir la ruta completa al archivo HTML
@@ -193,12 +193,12 @@ tabla_h = go.Figure()
 
 #dias que colorearemos
 columnas_horas = [
-    'Lunes_Inicio', 'Lunes_Fin',
-    'Martes_Inicio', 'Martes_Fin',
-    'Miercoles_Inicio', 'Miercoles_Fin',
-    'Jueves_Inicio', 'Jueves_Fin',
-    'Viernes_Inicio', 'Viernes_Fin',
-    'Sabado_Inicio', 'Sabado_Fin'
+    'Lun_I', 'Lun_F',
+    'Mar_I', 'Mar_F',
+    'Mier_I', 'Mier_F',
+    'Jue_I', 'Jue_F',
+    'Vie_I', 'Vie_F',
+    'Sab_I', 'Sab_F'
 ]
 
 for especialidad in especialidades:
@@ -209,7 +209,6 @@ for especialidad in especialidades:
 
     #columnas fijas (no le ponemos color)
     colores_celdas.append(['white'] * len(df_filt))  #Cursos
-    colores_celdas.append(['white'] * len(df_filt))  #Especialidad
 
     #Para cada columna de horario le podremos color a la celda
     for col in columnas_horas:
@@ -223,14 +222,13 @@ for especialidad in especialidades:
     tabla_h.add_trace(
         go.Table(
             header=dict(
-                values=['Cursos', 'Especialidad'] + columnas_horas,
+                values=['Cursos'] + columnas_horas,
                 fill_color='#9A0924',
                 align='center',
                 font=dict(color='white', size=12)
             ),
             cells=dict(
                 values=[df_filt['Cursos']] +
-                       [df_filt['Especialidad']] +
                        [df_filt[col] for col in columnas_horas],
                 fill_color=colores_celdas,
                 align='left',
@@ -286,16 +284,16 @@ df_CECATI13_HorN = df_CECATI_13NH[df_CECATI_13NH['Especialidad'].isin(especialid
 
 # Columnas de horario
 columnas_horas2 = [
-    'Lunes_Inicio', 'Lunes_Fin',
-    'Martes_Inicio', 'Martes_Fin',
-    'Miercoles_Inicio', 'Miercoles_Fin',
-    'Jueves_Inicio', 'Jueves_Fin',
-    'Viernes_Inicio', 'Viernes_Fin',
-    'Sabado_Inicio', 'Sabado_Fin'
+    'Lun_I', 'Lun_F',
+    'Mar_I', 'Mar_F',
+    'Mier_I', 'Mier_F',
+    'Jue_I', 'Jue_F',
+    'Vie_I', 'Vie_F',
+    'Sab_I', 'Sab_F'
 ]
 
 # Días que se consideran en la tarde
-dias_tarde = ['Jueves', 'Viernes', 'Sabado']
+dias_tarde = ['Jue', 'Vie', 'Sab']
 
 # Crear la figura
 tabla_hn = go.Figure()
@@ -309,7 +307,6 @@ for especialidad2 in especialidades2:
 
     # Columnas fijas sin color
     colores_celdas2.append(['white'] * len(df_filt2))  # Cursos
-    colores_celdas2.append(['white'] * len(df_filt2))  # Especialidad
 
     for col2 in columnas_horas2:
         colores_columna2 = []
@@ -342,14 +339,13 @@ for especialidad2 in especialidades2:
     tabla_hn.add_trace(
         go.Table(
             header=dict(
-                values=['Cursos', 'Especialidad'] + columnas_horas2,
+                values=['Cursos'] + columnas_horas2,
                 fill_color='#9A0924',
                 align='center',
                 font=dict(color='white', size=12)
             ),
             cells=dict(
                 values=[df_filt2['Cursos']] +
-                       [df_filt2['Especialidad']] +
                        [df_filt2[col2] for col2 in columnas_horas2],
                 fill_color=colores_celdas2,
                 align='left',
