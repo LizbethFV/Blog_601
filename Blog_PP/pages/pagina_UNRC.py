@@ -7,7 +7,7 @@ import plotly.express as px
 from dash import html, register_page
 
 #Registramos la página
-dash.register_page(__name__, path="/", name="1.Universidad Nacional Rosario Castellanos")
+dash.register_page(__name__, path="/", name="Universidad Nacional Rosario Castellanos", order=1)
 
 # Cargar datos limpios
 Colores = ['#3B0815','#500207','#77030B', '#9F040E', '#C70512', '#F92432', '#FA4C58','#9A0924', '#60061F','#4F0527', '#3B0815', '#3B0815','#500207','#77030B', '#9F040E', '#C70512', '#F92432', '#FA4C58','#9A0924', '#60061F','#4F0527', '#3B0815' ]
